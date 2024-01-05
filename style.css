@@ -14,22 +14,14 @@ body{
 
 
 
-    --fs-h1: 4rem;
+    --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
 
 }
-@media(min-width: 800px) {
-    :root{
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
 
-    }
-}
 
 
 h1,
@@ -59,15 +51,21 @@ h3{
     font-size: var(--fs-h1);
 }
 
+span{
+    color: white;
+    filter: drop-shadow(5px 10px 10px black);
+}
+
 
 .email,
 .password,
-.log-in{
+.log-in,
+.sign-up{
     display: block;
-    left: -10.5em;
+    left: -4em;
     position: relative;
     align-items: center;
-    width: calc(100% + 20.5em);   
+    width: calc(100% + 8.5em);  
     height: 3em;
     margin: 0 0 1em 0;
     top: -2em;
@@ -77,21 +75,31 @@ h3{
     border: none;
     color: white;
     font-weight:900;
+
+    
 }
 
 
-.log-in{
-    left: -10.5em;
+.log-in,
+.sign-up{
+    
     position: relative;
     align-items: center;
-    width: calc(100% + 21em);   
+    width: calc(100% + 8.5em);   
     height: 3em;
     top: -1em;
     background-color: 	rgb(11, 235, 235);
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+
+.sign-up{
+    background-color: rgba(0,0,0,0.7);
 }
 
 .icon{
-    left: -9em;
+
     position: relative;
     
 }
@@ -102,4 +110,39 @@ h3{
     cursor: pointer;
     filter: drop-shadow(5px 10px 10px black);
     
+}
+
+@media (min-width: 800px) {
+    :root{
+        --fs-h1: 5.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 2.125rem;
+       
+    }
+    .email,
+.password,
+.log-in,
+.sign-up{
+
+    width: calc(100% + 27.5em); 
+    left: -13.5em;
+    height: 4em;
+    font-size: 1em;
+}
+
+.log-in, 
+.sign-up{
+
+    width: calc(100% + 26em);   
+}
+.icon{
+    left: -13em;
+    
+    position: relative;
+    
+}
+.icon i{
+    font-size: 3em;
+}
 }
