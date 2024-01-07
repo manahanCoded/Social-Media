@@ -3,6 +3,7 @@ body{
     box-sizing: border-box;
     font-family: var(--ff-secondary);
     margin: 0;
+    background-color:	rgb(220, 255, 255);
    
 }
 :root{
@@ -29,11 +30,13 @@ body{
 
 
 .main_container{
-    grid-template-columns: 14rem auto 14rem;
+    grid-template-columns: 14rem auto 16rem;
     display: grid;
-    background-color:	rgb(220, 255, 255);
+
     height: 100vh;
 }
+
+
 
 .sidebar_container{
     display: flex;
@@ -43,18 +46,31 @@ body{
 }
 .sidebar{
     background-color: rgb(255, 255, 255);
-    height: 88vh;
+    height: 75vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 110%;
-    border-radius: 14px;
-    
+    border-radius: 14px 14px 0 0;
+    padding-top: 1rem;   
 }
+.partner_section{
+    background-color: skyblue;
+    height: 9.5vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 110%;  
+    border-radius: 0 0 14px 14px;
+ 
+}
+.partner{ 
+    top: 1vh;  
+}
+
+
 
 span{
     color: aqua;
 }
 
-.sidebar a{
+.sidebar a, .partner_section a{
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -67,8 +83,178 @@ span{
     color: skyblue;
     
 }
+.partner_section a{
+    color: white;
+}
+
 .sidebar a:hover{
     color: aqua;
-    
     margin-left: 2.6rem;
+}
+
+.partner_section:hover{
+    background-color:  rgb(108, 141, 155);
+}
+
+
+/*MIDDLE SECTION*/
+.middlebar_container{
+    height: 100vh;
+    
+}
+.search_container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0.8rem;
+    flex-direction: column;
+    
+}
+.search_background{
+    background-color: white;
+    border-radius: 10px;
+    width: 95%;
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 8px 20px 8px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.search_container input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1.5rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+}
+
+.result_box{
+    background-color: rgb(108, 141, 155);
+    top: 3.1rem;
+    width: 60%;
+    position: absolute;
+    border-radius: 0 0 14px 14px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+.result_box ul li{
+    list-style: none;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.result_box ul li:hover{
+    background-color: #e9f3ff;
+}
+
+
+/*NEWS SECTION*/
+/*Flash Section*/
+.news_section {
+    background-color: white;
+    height: 100vh;
+    border-radius: 14px 14px 0 0;
+    
+}
+
+.flash_section{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.flash_section img{
+    margin-top: 3.5%;
+    width: 95%;
+    height: 70vh;
+    border-radius: 14px;
+
+}
+.flash_section img:hover{
+
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+/*Sale Section*/
+.sale{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Profile Section*/
+.profile_container{
+    height: 100vh;
+    width: 90%;
+    margin-left: 5%;
+}
+.profile_section{
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile_section button{
+    border: none;
+}
+
+.profile_section img , .circle{
+    height:  50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:  skyblue;
+}
+
+.profile_section .profile{
+    background-image: url("pexels-krivec-ales-547114.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.circle{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*Cart Section*/
+.cart_section{
+    height: 50vh;
+    border-radius: 14px;
+    background-color:  rgb(108, 141, 155);
+    overflow: hidden;
+}
+
+.cart_section h3{
+    font-size: var(--fs-h3);
+}
+
+
+
+
+/*Coupon Section*/
+.coupon_section{
+    height: 35vh;
+    margin-top:5%;
+    border-radius: 14px;
+    background-color: skyblue;
 }
