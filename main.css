@@ -32,7 +32,6 @@ body{
 .main_container{
     grid-template-columns: 14rem auto 16rem;
     display: grid;
-
     height: 100vh;
 }
 
@@ -42,8 +41,8 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
 }
+
 .sidebar{
     background-color: rgb(255, 255, 255);
     height: 75vh;
@@ -51,6 +50,7 @@ body{
     width: 110%;
     border-radius: 14px 14px 0 0;
     padding-top: 1rem;   
+    
 }
 .partner_section{
     background-color: skyblue;
@@ -157,7 +157,6 @@ span{
 /*Flash Section*/
 .news_section {
     background-color: white;
-    height: 100vh;
     border-radius: 14px 14px 0 0;
     
 }
@@ -170,7 +169,7 @@ span{
 .flash_section img{
     margin-top: 3.5%;
     width: 95%;
-    height: 70vh;
+    height: 68vh;
     border-radius: 14px;
 
 }
@@ -182,11 +181,24 @@ span{
 
 /*Sale Section*/
 .sale{
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     display: grid;
+    
 }
-
+.card{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    width: 28vh;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 
 
 
@@ -204,7 +216,7 @@ span{
     margin-left: 5%;
 }
 .profile_section{
-    padding: 0.8rem;
+    padding: 0.6rem;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -242,10 +254,25 @@ span{
     border-radius: 14px;
     background-color:  rgb(108, 141, 155);
     overflow: hidden;
+    padding: 0.2rem;
+    overflow-y: scroll;
 }
 
 .cart_section h3{
     font-size: var(--fs-h3);
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.cart img{
+    height: 50px;
+    width: 50px;
 }
 
 
