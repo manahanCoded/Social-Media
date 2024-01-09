@@ -262,7 +262,7 @@ span{
     font-size: var(--fs-h3);
 }
 
-.cart{
+.cart {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -284,4 +284,18 @@ span{
     margin-top:5%;
     border-radius: 14px;
     background-color: skyblue;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 0.2rem;
+}
+.coupon{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon img{
+    height: 50px;
+    width: 50px;
 }
